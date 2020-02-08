@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hdstorage</title>
+    <link rel="stylesheet" href="css/catalog/catalog.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__box">
+        <div class="header__burger js-burger-menu-btn">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </div>
+        <a href="/" class="header__logo">
+            <img class="header__logo-img" src="https://www.kp.ru/putevoditel/serialy/wp-content/themes/serialy/assets/images/logo.svg" alt="">
+        </a>
+        <nav class="header__nav js-nav-menu">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">По жанрам</a>
+                    <span class="header__nav-arrow js-submenu-open"></span>
+                    <div class="header__nav-submenu">
+                        <ul class="header__nav-submenu-list">
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Комедии</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Драмы</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Ужасы</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Боевики</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Триллеры</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Фэнтези</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Детективы</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Криминал</a>
+                            </li>
+                            <li class="header__nav-submenu-item">
+                                <a href="#" class="header__nav-submenu-link">Фантастика</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">По странам</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Рецензии</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">На выходные</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Новости</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Интересно</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <span class="header__search-icon js-search-btn-toggle"></span>
+            <div class="header__search-box">
+                <form method="get" action="" class="header__search-form">
+                    <input type="text" class="header__search-input" name="" placeholder="Введите название сериала">
+                    <button type="submit" class="header__search-btn">Найти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="catalog">
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Сериалы</a>
+                </li>
+                <li class="breadcrumbs__item">Сверхъестественное 15 сезон</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="catalog__head">
+        <h1 class="catalog__title">Сериалы боевики</h1>
+    </section>
+
+    <div class="catalog__box">
+        <aside class="catalog__filters js-filters">
+            <div class="filters">
+                <div class="filters__head">
+                  <span class="filters__head-title">Фильтр</span>
+                  <span class="filters__head-clear">Сбросить</span>
+                  <span class="filters__head-close js-filters-close"></span>
+                </div>
+                <div class="filters__box">
+                    <div class="filters__category">
+                        <div class="filters__category-title active js-toggle-category-filters">Жанр</div>
+                        <ul class="filters__category-list open">
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-1">
+                                <label for="checkbox-genre-1" class="filters__category-checkbox">Аниме</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-2">
+                                <label for="checkbox-genre-2" class="filters__category-checkbox">Боевики</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-3">
+                                <label for="checkbox-genre-3" class="filters__category-checkbox">Драма</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-4">
+                                <label for="checkbox-genre-4" class="filters__category-checkbox">Комедии</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-5">
+                                <label for="checkbox-genre-5" class="filters__category-checkbox">Ужасы</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-6">
+                                <label for="checkbox-genre-6" class="filters__category-checkbox">Исторические</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-7">
+                                <label for="checkbox-genre-7" class="filters__category-checkbox">Мелодрамы</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-8">
+                                <label for="checkbox-genre-8" class="filters__category-checkbox">Комиксы</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-9">
+                                <label for="checkbox-genre-9" class="filters__category-checkbox">Фантастика</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-10">
+                                <label for="checkbox-genre-10" class="filters__category-checkbox">Молодежные</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-genre-11">
+                                <label for="checkbox-genre-11" class="filters__category-checkbox">Триллеры</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filters__category">
+                        <div class="filters__category-title js-toggle-category-filters">Страна</div>
+                        <ul class="filters__category-list">
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-country-1">
+                                <label for="checkbox-country-1" class="filters__category-checkbox">Англия</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-country-2">
+                                <label for="checkbox-country-2" class="filters__category-checkbox">Украина</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-country-3">
+                                <label for="checkbox-country-3" class="filters__category-checkbox">США</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-country-4">
+                                <label for="checkbox-country-4" class="filters__category-checkbox">Канада</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-country-5">
+                                <label for="checkbox-country-5" class="filters__category-checkbox">Россия</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filters__category">
+                        <div class="filters__category-title js-toggle-category-filters">Год выпуска</div>
+                        <ul class="filters__category-list">
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-year-1">
+                                <label for="checkbox-year-1" class="filters__category-checkbox">2022</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-year-2">
+                                <label for="checkbox-year-2" class="filters__category-checkbox">2021</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-year-3">
+                                <label for="checkbox-year-3" class="filters__category-checkbox">2020</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-year-4">
+                                <label for="checkbox-year-4" class="filters__category-checkbox">2019</label>
+                            </li>
+                            <li class="filters__category-item">
+                                <input type="checkbox" id="checkbox-year-5">
+                                <label for="checkbox-year-5" class="filters__category-checkbox">2017-2018</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              <div class="filters__save">
+                <button class="filters__save-btn">Применить</button>
+              </div>
+            </div>
+        </aside>
+        <section class="catalog__content">
+            <div class="catalog__buttons">
+                <div class="catalog__buttons-filter js-filters-open">Фильтр</div>
+            </div>
+            <div class="catalog__films">
+                <div class="catalog__films-box">
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  <div class="catalog__films-item">
+                    <a href="#" class="film-card">
+                      <div class="film-card__poster">
+                        <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                        <span class="film-card__marker">18+</span>
+                        <div class="film-card__season">
+                          <span class="film-card__season-number">1</span>
+                          <span class="film-card__season-txt">сезон</span>
+                        </div>
+                      </div>
+                      <div class="film-card__info">
+                        <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                        <div class="film-card__subtitle">
+                          <span class="film-card__genre">Фэнтези, Ужасы</span>
+                          <span class="film-card__rating">6.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="catalog__films-item">
+                    <a href="#" class="film-card">
+                      <div class="film-card__poster">
+                        <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                        <span class="film-card__marker">18+</span>
+                        <div class="film-card__season">
+                          <span class="film-card__season-number">1</span>
+                          <span class="film-card__season-txt">сезон</span>
+                        </div>
+                      </div>
+                      <div class="film-card__info">
+                        <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                        <div class="film-card__subtitle">
+                          <span class="film-card__genre">Фэнтези, Ужасы</span>
+                          <span class="film-card__rating">6.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__films-item">
+                        <a href="#" class="film-card">
+                            <div class="film-card__poster">
+                                <img src="https://s3.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2019/07/4-73-e1563164295479-467x697.jpg" alt="" class="film-card__img">
+                                <span class="film-card__marker">18+</span>
+                                <div class="film-card__season">
+                                    <span class="film-card__season-number">1</span>
+                                    <span class="film-card__season-txt">сезон</span>
+                                </div>
+                            </div>
+                            <div class="film-card__info">
+                                <div class="film-card__title">Реальные упыри/Чем мы заняты в тени</div>
+                                <div class="film-card__subtitle">
+                                    <span class="film-card__genre">Фэнтези, Ужасы</span>
+                                    <span class="film-card__rating">6.00</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item prev">
+          <a href="#" class="pagination__link">Предыдущая страница</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">1</a>
+        </li>
+        <li class="pagination__item active">
+          <a href="#" class="pagination__link">2</a>
+        </li>
+        <li class="pagination__item dots">
+          <a href="#" class="pagination__link">...</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">8</a>
+        </li>
+        <li class="pagination__item next">
+          <a href="#" class="pagination__link">Следующая страница</a>
+        </li>
+      </ul>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__form">
+            <div class="footer__form-title">
+                Получайте только <span class="blue">лучшее</span> о сериалах на почту
+            </div>
+            <form action="" class="footer__form-box">
+                <div class="footer__form-fields">
+                    <input type="text" class="footer__form-input js-email-field" placeholder="Введите email">
+                    <button class="footer__form-btn js-send-email" type="submit">Подписаться</button>
+                </div>
+                <div class="footer__form-policy">
+                    <div class="page-footer_subscribe-policy">
+                        Подписываясь на рассылку, Вы соглашаетесь с <a href="https://www.kp.ru/daily/26600.4/3615024/" target="_blank">политикой конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">О проекте</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Персональные данные</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Lorem ipsum dolor.</a>
+                </li>
+            </ul>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Каталог сериалов</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Комедии</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Боевики</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Фэнтези</a>
+                </li>
+            </ul>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Сериалы про космос</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Lorem ipsum dolor sit.</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Lorem ipsum.</a>
+                </li>
+            </ul>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Реклама</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Lorem ipsum dolor sit.</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__social">
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/odnoklassniki.svg" alt="" class="footer__social-img">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/vk.svg" alt="" class="footer__social-img">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img src="img/facebook.svg" alt="" class="footer__social-img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/catalog.js"></script>
+</body>
+</html>
