@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hdstorage</title>
-    <link rel="stylesheet" href="css/catalog/catalog.css">
+    <link rel="stylesheet" href="../../assets/css/catalog/catalog.css">
 </head>
 <body>
 <header class="header">
@@ -390,31 +390,39 @@
                         </a>
                     </div>
                 </div>
+                <div class="catalog__more">
+                    <button class="catalog__more-btn">
+                        Больше
+                        <svg class="spinner catalog__more-icon" viewBox="0 0 50 50">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__item prev">
+                        <a href="#" class="pagination__link">Предыдущая страница</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item active">
+                        <a href="#" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item dots">
+                        <a href="#" class="pagination__link">...</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">8</a>
+                    </li>
+                    <li class="pagination__item next">
+                        <a href="#" class="pagination__link">Следующая страница</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>
-    <section class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item prev">
-          <a href="#" class="pagination__link">Предыдущая страница</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">1</a>
-        </li>
-        <li class="pagination__item active">
-          <a href="#" class="pagination__link">2</a>
-        </li>
-        <li class="pagination__item dots">
-          <a href="#" class="pagination__link">...</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">8</a>
-        </li>
-        <li class="pagination__item next">
-          <a href="#" class="pagination__link">Следующая страница</a>
-        </li>
-      </ul>
-    </section>
 </main>
 <footer class="footer">
     <div class="container">
@@ -484,23 +492,23 @@
             <ul class="footer__social-list">
                 <li class="footer__social-item">
                     <a href="#" class="footer__social-link">
-                        <img src="img/odnoklassniki.svg" alt="" class="footer__social-img">
+                        <img src="../../assets/img/odnoklassniki.svg" alt="" class="footer__social-img">
                     </a>
                 </li>
                 <li class="footer__social-item">
                     <a href="#" class="footer__social-link">
-                        <img src="img/vk.svg" alt="" class="footer__social-img">
+                        <img src="../../assets/img/vk.svg" alt="" class="footer__social-img">
                     </a>
                 </li>
                 <li class="footer__social-item">
                     <a href="#" class="footer__social-link">
-                        <img src="img/facebook.svg" alt="" class="footer__social-img">
+                        <img src="../../assets/img/facebook.svg" alt="" class="footer__social-img">
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 </footer>
-<script src="js/catalog.js"></script>
+<script src="../../assets/js/catalog.js"></script>
 </body>
 </html>
